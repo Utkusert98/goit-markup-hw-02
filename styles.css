@@ -1,99 +1,209 @@
-
+/* Genel Stiller */
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
+    font-family: "Roboto", sans-serif;
+    color: #434455;
     background-color: #fff;
+    margin: 0;
+    padding: 0;
     line-height: 1.5;
-    font-size: 16px;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
     transition: color 0.3s ease;
 }
 
-a:hover, a:focus {
-    color: #ff5733;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #f8f9fa;
+    padding: 20px 80px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    font-size: 24px;
+
+
+/* Menü */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    width: 100%;
+
+  }
+  
+  /* Logo */
+  .logotype {
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
-}
-
-nav ul {
-    list-style: none;
+    font-size: 24px;
+  }
+  
+  .web-color {
+    color: rgba(77, 90, 229, 1); /* Mavi "WEB" */
+  }
+  
+  .logstudio {
+    color: #2e2f42; /* Siyah "STUDIO" */
+  }
+  
+  /* Nav Menü */
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #434455;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #404bbf;
+  }
+  
+  /* İletişim */
+  .contacts {
     display: flex;
     gap: 20px;
+    font-size: 14px;
+  }
+  
+  .contacts a {
+    color: #434455;
+    text-decoration: none;
+  }
+  
+  .contacts a:hover {
+    color: #404bbf;
+  }
+  
+/* Hero Bölümü */
+.container {
+    font-size: 50px;
+    line-height: 60px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2%;
+
+  }
+
+.hero {
+    background-color: #2e2f42;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
 }
 
-nav a {
-    font-weight: 500;
-}
-
-nav a:hover, nav a:focus {
-    color: #ff5733;
-}
-
-
-main {
-    padding: 40px;
-}
-
-h1, h2, h3 {
+.hero h1 {
+    font-size: 48px;
     font-weight: 700;
 }
 
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 28px;
-}
-
-h3 {
-    font-size: 22px;
-}
-
-
-button {
-    font-family: inherit;
-    font-size: 16px;
-    padding: 10px 20px;
+/* Buton */
+.btn-order {
+    background-color: #4d5ae5;
+    color: #fff;
     border: none;
+    padding: 12px 24px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 40px; /* Butonu aşağı kaydırır */
 }
 
-button:hover, button:focus {
-    background-color: #ff5733;
-    color: white;
+.btn-order:hover {
+    background-color: #404bbf;
 }
 
-
-.team-member {
+/* Özellikler */
+.features {
     text-align: center;
-    transition: color 0.3s ease;
+    padding: 60px 20px;
 }
 
-.team-member h3:hover, .team-member h3:focus {
-    color: #ff5733;
+.features-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
+.features-list li {
+    max-width: 250px;
+}
 
+/* Ekip */
+.team {
+    background-color: #f4f4fd;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-list img {
+    border-radius: 10px;
+}
+
+/* Portföy */
+.portfolio {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.portfolio-list li {
+    width: 100%;
+    max-width: 360px;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #2b2b3b;
+    padding: 40px 80px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fottype {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+}
+
+.fottype .fotstudio {
+    color: #3f5efb;
+}
+
+footer p {
+    font-size: 16px;
+    max-width: 400px;
+    line-height: 1.5
+
 }
