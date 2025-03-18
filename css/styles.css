@@ -48,15 +48,22 @@ header {
   .logotype {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
   }
   
   .web-color {
-    color: rgba(77, 90, 229, 1); /* Mavi "WEB" */
+    color: rgba(77, 90, 229, 1);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    /* Mavi "WEB" */
   }
   
   .logstudio {
-    color: #2e2f42; /* Siyah "STUDIO" */
+    color: #2e2f42;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px; /* Siyah "STUDIO" */
   }
   
   /* Nav Menü */
