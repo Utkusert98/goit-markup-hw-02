@@ -36,13 +36,11 @@ header {
 
 /* Menü */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-    width: 100%;
-
-  }
+  display: flex;
+  justify-content: center; /* İçeriği yatayda ortalar */
+  align-items: center; /* İçeriği dikeyde ortalar */
+  gap: 900px; /* Navigasyon ile adres arasında boşluk bırakır */
+}
   
   /* Logo */
   .logotype {
@@ -69,15 +67,19 @@ header {
   /* Nav Menü */
   .nav-list {
     display: flex;
-    gap: 40px;
-  }
+    gap: 80px; /* Menü öğeleri arasındaki boşluğu ayarlar */
+    list-style: none; /* Liste işaretlerini kaldırır */
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Menü öğelerini yatayda ortalar */
+    align-items: center;
+}
   
-  .nav-link {
-    font-size: 16px;
-    font-weight: 500;
-    color: #434455;
-    transition: color 0.3s ease;
-  }
+.nav-link {
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+  color: #2E2F42; /* Rengi ayarla */
+  font-weight: 500;
+}
   
   .nav-link:hover {
     color: #404bbf;
@@ -86,7 +88,7 @@ header {
   /* İletişim */
   .contacts {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     font-size: 14px;
   }
   
@@ -98,7 +100,32 @@ header {
   .contacts a:hover {
     color: #404bbf;
   }
-  
+
+  .contacts ul {
+    display: flex; /* Öğeleri yatay hizalar */
+    gap: 20px; /* Öğeler arasında boşluk bırakır */
+    list-style: none; /* Liste noktalarını kaldırır */
+    padding: 0;
+    margin: 0;
+    right: 150px;
+    top: 20px;
+    position: absolute;
+
+}
+
+.contacts ul li {
+    display: inline; /* Öğeleri yan yana dizer */
+}
+
+.contacts .item-link {
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    color: rgba(67, 68, 85, 1);
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+
+
+}
 /* Hero Bölümü */
 .container {
     font-size: 50px;
