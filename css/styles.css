@@ -39,7 +39,7 @@ header {
   display: flex;
   justify-content: center; /* İçeriği yatayda ortalar */
   align-items: center; /* İçeriği dikeyde ortalar */
-  gap: 900px; /* Navigasyon ile adres arasında boşluk bırakır */
+  gap: 1200px; /* Navigasyon ile adres arasında boşluk bırakır */
 }
   
   /* Logo */
